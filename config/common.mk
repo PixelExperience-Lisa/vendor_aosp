@@ -205,6 +205,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
+# Inherit art options
+include vendor/aosp/config/art.mk
+
 # Repainter integration
 PRODUCT_PACKAGES += \
     RepainterServicePriv
